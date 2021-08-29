@@ -1,0 +1,91 @@
+html{
+    font-family: 'Merriweather', serif;
+    background-color: rgb(204 61 61);
+}
+body {
+    color:blanchedalmond;   
+    width: auto;
+    margin: 20px auto;
+    font-weight: 100;
+    padding: 0 20px 20px 20px;
+    
+}
+
+p {
+    color:blanchedalmond;
+    
+}
+
+ul{
+    list-style-position: inside; 
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color:black;
+}
+h1 {
+    margin: 0;
+    padding: 20px;
+    text-align:center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;
+    border-radius: 3px;
+    border: solid 2px black;
+}
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;    /* Footer height */
+    margin-bottom: 25px;
+}
+.intro-text {
+    max-width: 50%;
+
+}
+.image {
+    margin: 20px;
+    text-align: center;
+    
+}
+footer{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    height: 45px;
+    border: solid 2px black;
+    margin: auto;
+}
+.fa-instagram {
+    background: purple;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 60%;
+  }
+  footer>p {
+      position: relative;
+      margin: auto;
+      padding: 5px;
+  }

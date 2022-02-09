@@ -44,7 +44,7 @@ img {
     padding-bottom: 25px;    /* Footer height */
     margin-bottom: 25px;
 }
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     .container{
         display: flex;
         flex-direction: column;

@@ -1,69 +1,59 @@
-html{
-    font-family: 'Merriweather', serif;
-    background-color: rgb(204 61 61);
+html {
+  font-family: "Merriweather", serif;
+  background-color: rgb(204 61 61);
 }
-body {
-    color:blanchedalmond;   
-    width: 100vw;
+@media screen and (min-width: 769px) {
+  body {
+    color: blanchedalmond;
+    width: 100%;
     margin: 20px auto;
     font-weight: 100;
     padding: 0 0 20px 0;
-    
-}
+  }
 
-p {
-    color:blanchedalmond;
-    
-}
+  p {
+    color: blanchedalmond;
+  }
 
-ul{
-    list-style-position: inside; 
-}
-a {
+  ul {
+    list-style-position: inside;
+  }
+  a {
     text-decoration: none;
-}
-a:hover {
-    color:black;
-}
-h1 {
+  }
+  a:hover {
+    color: black;
+  }
+  h1 {
     margin: 0;
     padding: 20px;
-    text-align:center;
-}
-img {
+    text-align: center;
+  }
+  img {
     display: block;
     margin: 0 auto;
     max-width: 70%;
     height: auto;
     border-radius: 3px;
     border: solid 2px black;
-}
-.container{
+  }
+  .container {
     display: flex;
     flex-direction: row;
-    padding-bottom: 25px;    /* Footer height */
+    padding-bottom: 25px; /* Footer height */
     margin-bottom: 25px;
-}
-@media screen and (max-width: 768px){
-    .container{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 25px;    /* Footer height */
-        margin-bottom: 25px;
-    }
-}
-.intro-text {
-    max-width: 50%;
+  }
 
-}
-.image {
+  .intro-text {
+    max-width: 50%;
+  }
+  .image {
     margin: 20px;
     text-align: center;
-    
-}
-footer{
+  }
+  footer {
     position: fixed;
-    left:0;
+    left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -71,8 +61,8 @@ footer{
     height: 45px;
     border: solid 2px black;
     margin: auto;
-}
-.fa-instagram {
+  }
+  .fa-instagram {
     background: purple;
     color: white;
   }
@@ -91,8 +81,18 @@ footer{
     margin: 5px 2px;
     border-radius: 60%;
   }
-  footer>p {
-      position: relative;
-      margin: auto;
-      padding: 5px;
+  footer > p {
+    position: relative;
+    margin: auto;
+    padding: 5px;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px; /* Footer height */
+    margin-bottom: 25px;
+  }
+}

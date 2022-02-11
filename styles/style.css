@@ -6,9 +6,10 @@ html {
   body {
     color: blanchedalmond;
     width: 100%;
-    margin: 20px auto;
+    margin: 0 0 20px 0;
     font-weight: 100;
     padding: 0 0 20px 0;
+    box-sizing: border-box;
   }
 
   p {
@@ -39,9 +40,11 @@ html {
   }
   .container {
     display: flex;
+    width: 100%;
     flex-direction: row;
     padding-bottom: 25px; /* Footer height */
     margin-bottom: 25px;
+    box-sizing: border-box;
   }
 
   .intro-text {
@@ -94,5 +97,84 @@ html {
     flex-direction: column;
     padding-bottom: 25px; /* Footer height */
     margin-bottom: 25px;
+    box-sizing: border-box;
+  }
+  body {
+    color: blanchedalmond;
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-weight: 100;
+    padding: 0 0 20px 0;
+  }
+
+  p {
+    color: blanchedalmond;
+  }
+
+  ul {
+    list-style-position: inside;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+  }
+  h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 3px;
+    border: solid 2px black;
+  }
+
+  .intro-text {
+    padding: 10px;
+    margin: auto;
+  }
+  .image {
+    margin: 20px;
+    text-align: center;
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    height: 45px;
+    border: solid 2px black;
+    margin: auto 0;
+  }
+  .fa-instagram {
+    background: purple;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 60%;
+  }
+  footer > p {
+    position: relative;
+    margin: auto;
+    padding: 5px;
   }
 }

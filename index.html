@@ -21,6 +21,21 @@
   </head>
   <body>
     <script>
+    var deviceInfo = window.navigator.standalone;
+    var userInfo = window.navigator.userAgent;
+    
+    var deviceP = document.createElement("P")
+    var userP = document.createElement("P")
+    userP.textContent = userInfo;
+    document.body.prepend(userP);  
+    if (deviceInfo){
+    deviceP.textContent = "This is an ios mobile device";
+    userP.after(deviceP)  
+    }  
+      
+    
+    </script>
+    <script>
       (window.wizardConfig = {
         spaceId: "fufwc487rrk5",
         apiKey: "RyKHZkFQPlXRvsVTDWpgV7fCfSA3NJtg-xBHjEbOEn0",

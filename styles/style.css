@@ -180,9 +180,9 @@ html {
 }
 
 #popup {
-  position: relative;
-  bottom: 10px;
-  left: 13.8%;
+  position: absolute;
+  bottom: 5vh;
+  left: 22%;
   width: 208px;
   height: 80px;
   padding: 10px;
@@ -192,8 +192,6 @@ html {
   -webkit-border-radius: 5px;
   z-index: 9999;
   text-align: center;
-  -webkit-box-shadow: 10px 10px 30px #333, -10px -10px 30px #333,
-    -10px 10px 30px #333, 10px -10px 30px #333;
 }
 #popup::after {
   position: absolute;
@@ -208,9 +206,9 @@ html {
   z-index: 9999;
 }
 
-p {
+#popup p {
   color: black;
-  text-shadow: 0px -2px 0px #00234c;
+  /* text-shadow: 0px -2px 0px #00234c; */
   font-size: 12px;
   font-weight: bold;
   font-family: Helvetica, Arial, sans-serif;

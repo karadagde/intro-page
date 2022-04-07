@@ -24,13 +24,16 @@
   </head>
   <body>
     <script>
-      setInterval(() => {
+      var count = 0;
+      var intervalId = setInterval(() => {
         var cookieInfo = `${document.cookie} ${new Date()}`;
         var cookieP = document.createElement("P");
         cookieP.textContent =
           cookieInfo !== "" ? cookieInfo : `No cookie ${new Date()}`;
         document.getElementById("wizardbox").before(cookieP);
-      }, 1000);
+        count++;
+      }, 10000);
+
       if (!document.cookie.includes("username")) {
         document.cookie =
           "username=John Doe; expires=Thu, 15 Dec 2022 12:00:00 UTC";

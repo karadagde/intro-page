@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,17 +20,28 @@
   </head>
   <body>
     <script>
-    var deviceInfo = window.navigator.standalone;
-    var userInfo = window.navigator.userAgent;
-    
-    var deviceP = document.createElement("P")
-    var userP = document.createElement("P")
-    userP.textContent = userInfo;
-    document.body.prepend(userP);  
-    if (deviceInfo){
-    deviceP.textContent = "This is an ios mobile device";
-    document.body.prepend(deviceP);  
-    }    
+      var cookieMob = document.cookie;
+      if (!document.cookie.includes("username")) {
+        document.cookie =
+          "username=John Doe; expires=Thu, 15 Dec 2022 12:00:00 UTC";
+      }
+    </script>
+    <script>
+      var deviceInfo = window.navigator.standalone;
+      var userInfo = window.navigator.userAgent;
+
+      var deviceP = document.createElement("P");
+      var userP = document.createElement("P");
+      var cookieInfo = document.cookie;
+      var cookieP = document.createElement("P");
+      userP.textContent = userInfo;
+      cookieP.textContent = cookieInfo !== "" ? cookieInfo : "No cookie found";
+      document.body.prepend(userP);
+      userP.after(cookieP);
+      if (deviceInfo) {
+        deviceP.textContent = "This is an ios mobile device";
+        document.body.prepend(deviceP);
+      }
     </script>
     <script>
       window.wizardConfig = {
@@ -40,6 +51,9 @@
         conversationId: "2yarQbkeQMlB2Gw7TXHvpT",
       };
     </script>
+    <button>Show me regular cookies</button>
+    <button>Show me john doe cookie</button>
+
     <div id="wizardbox"></div>
     <div class="container">
       <div class="image">

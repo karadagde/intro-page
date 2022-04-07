@@ -180,9 +180,9 @@ html {
 }
 
 #popup {
-  position: absolute;
-  bottom: 5vh;
-  left: 22%;
+  position: fixed;
+  bottom: 6vh;
+  left: 21%;
   width: 208px;
   height: 80px;
   padding: 10px;

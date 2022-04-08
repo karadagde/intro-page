@@ -188,8 +188,8 @@ html {
   width: 213px;
   height: 70px;
   padding: 10px;
-  background-color: #8d8a89;
-  border: 2px solid #8d8a89;
+  background-color: #a7a5a4;
+  border: 2px solid #a7a5a4;
   -webkit-border-radius: 5px;
   z-index: 9999;
   text-align: center;
@@ -223,23 +223,22 @@ html {
   font-size: 24px;
   font-weight: bolder;
   color: black;
-
   cursor: pointer;
 }
 
 #popup-b {
   position: fixed;
-  bottom: 30vh;
+  margin-top: 5px;
   left: 0;
   right: 0;
   margin: auto;
   width: 85%;
   height: 65px;
   padding: 10px;
-  background-color: #8d8a89;
-  border: 2px solid #8d8a89;
+  background-color: #a7a5a4;
+  border: 2px solid #a7a5a4;
   -webkit-border-radius: 5px;
-  z-index: 9999;
+  z-index: 2147483641;
   text-align: center;
 }
 
@@ -247,4 +246,6 @@ html {
   color: black;
   font-size: 13px;
   font-family: Helvetica, Arial, sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0;
 }

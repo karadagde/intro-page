@@ -24,15 +24,15 @@
   </head>
   <body>
     <script>
-      var count = 0;
-      var intervalId = setInterval(() => {
-        var cookieInfo = `${document.cookie} ${new Date()}`;
-        var cookieP = document.createElement("P");
-        cookieP.textContent =
-          cookieInfo !== "" ? cookieInfo : `No cookie ${new Date()}`;
-        document.getElementById("wizardbox").before(cookieP);
-        count++;
-      }, 10000);
+      //  var count = 0;
+      // var intervalId = setInterval(() => {
+      var cookieInfo = `${document.cookie} ${new Date()}`;
+      var cookieP = document.createElement("P");
+      cookieP.textContent =
+        cookieInfo !== "" ? cookieInfo : `No cookie ${new Date()}`;
+      document.getElementById("wizardbox").before(cookieP);
+      //   count++;
+      //   }, 10000);
 
       if (!document.cookie.includes("username")) {
         document.cookie =
@@ -73,8 +73,8 @@
           xmlns:xlink="http://www.w3.org/1999/xlink"
           version="1.1"
           width="16"
-          height="20"
-          style="width: 16px; fill: rgb(50 173 230); height: 18px"
+          height="18"
+          style="width: 16px; fill: #2b87b2; height: 18px"
         >
           <g id="Symbols" style="transform: scale(0.2)">
             <g id="Regular-S" transform="matrix(1 0 0 1 0 85)">

@@ -186,10 +186,10 @@ html {
   right: 0;
   margin: auto;
   width: 213px;
-  height: 65px;
+  height: 70px;
   padding: 10px;
-  background-color: #767372;
-  border: 2px solid #767372;
+  background-color: #8d8a89;
+  border: 2px solid #8d8a89;
   -webkit-border-radius: 5px;
   z-index: 9999;
   text-align: center;
@@ -203,13 +203,15 @@ html {
   bottom: -20px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #767372;
+  border-top: 20px solid #8d8a89;
   z-index: 9999;
 }
 
 #popup p {
   color: black;
-  font-size: 13px;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -234,8 +236,8 @@ html {
   width: 85%;
   height: 65px;
   padding: 10px;
-  background-color: #767372;
-  border: 2px solid #767372;
+  background-color: #8d8a89;
+  border: 2px solid #8d8a89;
   -webkit-border-radius: 5px;
   z-index: 9999;
   text-align: center;

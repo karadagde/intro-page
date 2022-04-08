@@ -182,7 +182,9 @@ html {
 #popup {
   position: fixed;
   bottom: 6vh;
-  left: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 213px;
   height: 65px;
   padding: 10px;
@@ -221,4 +223,26 @@ html {
   color: black;
 
   cursor: pointer;
+}
+
+#popup-b {
+  position: fixed;
+  bottom: 30vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 85%;
+  height: 65px;
+  padding: 10px;
+  background-color: #767372;
+  border: 2px solid #767372;
+  -webkit-border-radius: 5px;
+  z-index: 9999;
+  text-align: center;
+}
+
+#popup-b p {
+  color: black;
+  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
 }
